@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Jessie's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel='stylesheet' href='./style.css'/>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src='./main.js'></script>
+  </head>
+  <body>
+    <div class='wrapper'>
+      <main>
+        <header>
+          <div class='innerHead margin'>
+            <div class='logoContainer'>
+              <img src='./images/jessie_logo.png' />
+            </div>
+            <nav>
+              <div class='navItem'>Home</div>
+              <div class='navItem'>About</div>
+              <div class='navItem'>Samples</div>
+              <div class='navItem'>Resume</div>
+              <div class='navItem'>Contact</div>
+            </nav>
+          </div>
+        </header>
+        <div class='home'>
+          <div class='homeContent margin'>
+            <h1>Lorem ipsum dolor</h1>
+            <h4>Lorem ipsum dolor sit amet. Dolor amet sit</h4>
+          </div>
+        </div>
+        <div id='aboutSection' class='about'>
+          <div class='aboutInner margin'>
+            <div class='jessieContainer'>
+              <div class='circle'>
+                <img class='jessieProfile' src='./images/jessie.jpeg' />
+              </div>
+            </div>
+            <div class='aboutTextContainer'>
+              <h1>About Me</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu finibus ante. Aenean dignissim, mi sed suscipit porta, orci turpis viverra elit, id facilisis eros eros sit amet mauris. Aenean eleifend venenatis fringilla. Praesent orci ante, iaculis tristique condimentum ac, placerat ac velit.</p>
+            </div>
+            <div class='nextSection'>
+              <p>Writing Samples</p>
+              <img class='arrow' src='./images/arrow_icon.png' />
+            </div>
+          </div>
+        </div>
+        <div id='samplesSection' class='samples'>
+          <div class='sampleContainer margin'>
+            <div class='sampleSortingButtons'>
+              <button onclick='sortSamples("individualSample")' class='activeButton all'>All</button>
+              <button onclick='sortSamples("travel")' data='travel' class='travel'>Travel</button>
+              <button onclick='sortSamples("homeDecor")' data='homeDecor' class='homeDecor'>Home Decor</button>
+              <button onclick='sortSamples("foodHealth")' data='foodHealth' class='foodHealth'>Food <span class='fontFix'>&amp;</span> Health</button>
+              <button onclick='sortSamples("recent")' data='recent' class='recent'>Recent</button>
+            </div>
+            <div class='individualSample travel'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Lorem ipsum dolor sit amet, id aliquet leo hendrerit.</p>
+              </div>
+            </div>
+            <div class='individualSample homeDecor'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Pellentesque habitant morbi tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample foodHealth'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Aenean eleifend ante laoreet augue sollicitudin, id aliquet leo hendrerit.</p>
+              </div>
+            </div>
+            <div class='individualSample homeDecor'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class='individualSample foodHealth'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Aenean eleifend ante laoreet augue sollicitudin.</p>
+              </div>
+            </div>
+            <div class='individualSample recent'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Dolor sit amet eleifend ante, id aliquet leo hendrerit.</p>
+              </div>
+            </div>
+            <div class='individualSample travel recent'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Pellentesque habitant morbi tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample travel'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication travel recent'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Sed interdum sodales odio quis tincidunt.</p>
+              </div>
+            </div>
+            <div class='individualSample'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Pellentesque habitant morbi tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Aenean eleifend tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Lean eleifend ante laoreet augue sollicitudin, id aliquet leo hendrerit.</p>
+              </div>
+            </div>
+            <div class='individualSample'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Let leo hendrerit morbi tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample travel'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Lorem ipsum dolor sit amet, id aliquet leo hendrerit.</p>
+              </div>
+            </div>
+            <div class='individualSample homeDecor'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Pellentesque habitant morbi tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample foodHealth'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Aenean eleifend ante laoreet augue sollicitudin, id aliquet leo hendrerit.</p>
+              </div>
+            </div>
+            <div class='individualSample homeDecor'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class='individualSample foodHealth'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Aenean eleifend ante laoreet augue sollicitudin.</p>
+              </div>
+            </div>
+            <div class='individualSample recent'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Dolor sit amet eleifend ante, id aliquet leo hendrerit.</p>
+              </div>
+            </div>
+            <div class='individualSample travel recent'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Pellentesque habitant morbi tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample travel'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication travel recent'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Sed interdum sodales odio quis tincidunt.</p>
+              </div>
+            </div>
+            <div class='individualSample'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Pellentesque habitant morbi tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Aenean eleifend tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Lean eleifend ante laoreet augue sollicitudin, id aliquet leo hendrerit.</p>
+              </div>
+            </div>
+            <div class='individualSample'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Let leo hendrerit morbi tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample travel'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Lorem ipsum dolor sit amet, id aliquet leo hendrerit.</p>
+              </div>
+            </div>
+            <div class='individualSample homeDecor'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Pellentesque habitant morbi tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample foodHealth'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Aenean eleifend ante laoreet augue sollicitudin, id aliquet leo hendrerit.</p>
+              </div>
+            </div>
+            <div class='individualSample homeDecor'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class='individualSample foodHealth'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Aenean eleifend ante laoreet augue sollicitudin.</p>
+              </div>
+            </div>
+            <div class='individualSample recent'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Dolor sit amet eleifend ante, id aliquet leo hendrerit.</p>
+              </div>
+            </div>
+            <div class='individualSample travel recent'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Pellentesque habitant morbi tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample travel'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication travel recent'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Sed interdum sodales odio quis tincidunt.</p>
+              </div>
+            </div>
+            <div class='individualSample'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Pellentesque habitant morbi tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Aenean eleifend tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Lean eleifend ante laoreet augue sollicitudin, id aliquet leo hendrerit.</p>
+              </div>
+            </div>
+            <div class='individualSample'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Let leo hendrerit morbi tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample travel'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Lorem ipsum dolor sit amet, id aliquet leo hendrerit.</p>
+              </div>
+            </div>
+            <div class='individualSample homeDecor'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Pellentesque habitant morbi tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample foodHealth'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Aenean eleifend ante laoreet augue sollicitudin, id aliquet leo hendrerit.</p>
+              </div>
+            </div>
+            <div class='individualSample homeDecor'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class='individualSample foodHealth'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Aenean eleifend ante laoreet augue sollicitudin.</p>
+              </div>
+            </div>
+            <div class='individualSample recent'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Dolor sit amet eleifend ante, id aliquet leo hendrerit.</p>
+              </div>
+            </div>
+            <div class='individualSample travel recent'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Pellentesque habitant morbi tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample travel'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication travel recent'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Sed interdum sodales odio quis tincidunt.</p>
+              </div>
+            </div>
+            <div class='individualSample'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Pellentesque habitant morbi tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Aenean eleifend tristique senectus et.</p>
+              </div>
+            </div>
+            <div class='individualSample'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Lean eleifend ante laoreet augue sollicitudin, id aliquet leo hendrerit.</p>
+              </div>
+            </div>
+            <div class='individualSample'>
+              <div class='samplePicture'>
+                <img src='./images/bird_on_boar.jpg' />
+              </div>
+              <div class='datePublication'>
+                <p>TRAVEL AGE WEST &#9679; 13TH OCTOBER 2018</p>
+              </div>
+              <div class='sampleDescription'>
+                <p>Let leo hendrerit morbi tristique senectus et.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

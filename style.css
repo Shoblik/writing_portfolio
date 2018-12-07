@@ -1,0 +1,224 @@
+body, html {
+    height: 100%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+}
+.wrapper {
+  background-color: #f7f7f7;
+  height: 100vh;
+}
+main {
+  background-color: white;
+  height: 100%;
+  margin: auto;
+}
+.margin {
+  width: 960px;
+  margin: auto;
+}
+/* /////////////////////////////// Header /////////////////////////// */
+
+header {
+    padding: 15px 0 15px 0;
+    background-color: #f7f7f7f7;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
+    transition: .4s;
+    color: #667584;
+
+}
+.shrinkHeader {
+    padding: 5px 0 5px 0;
+}
+.shrinkLogo {
+    width: 40% !important;
+}
+.shrinkNavItem {
+  font-size: 18px;
+}
+.innerHead {
+    position: relative;
+}
+.logoContainer, nav {
+  display: inline-block;
+}
+.navItem {
+    display: inline-block;
+    margin: 0 25px;
+    text-align: center;
+    transition: .4s;
+}
+.logoContainer {
+    width: 20%;
+}
+nav {
+    width: 79%;
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.logoContainer img {
+    width: 70%;
+    transition: .4s;
+    vertical-align: middle;
+}
+
+/* ////////////////////////////// Home ////////////////////////////////// */
+.home {
+    background-color: #007ebe;
+}
+.homeContent {
+    height: 100%;
+    padding: 275px 0 125px 0;
+}
+.homeContent h1,
+.homeContent h4 {
+  color: white;
+}
+.homeContent h4 {
+    font-size: 35px;
+}
+.homeContent h1 {
+    font-size: 60px;
+    padding-bottom: 25px;
+}
+/* ///////////////////////////////////// About ////////////////////////////// */
+.about {
+  background-color: #f7f7f7f7;
+  color: #667584;
+
+}
+.aboutInner h1 {
+    font-size: 55px;
+    text-align: left;
+    padding-bottom: 50px;
+}
+.jessieProfile {
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+.jessieContainer {
+    position: relative;
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+}
+.circle {
+    display: inline-block;
+    border: 2px solid #007ebe;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.aboutTextContainer {
+    width: 39%;
+    display: inline-block;
+}
+.aboutTextContainer p {
+    line-height: 35px;
+}
+.aboutInner {
+    padding: 45px;
+}
+.arrow {
+    width: 30px;
+    padding-top: 15px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nextSection {
+    padding-top: 45px;
+    color: #007ebe;
+    width: 300px;
+    margin: auto;
+}
+.nextSection p {
+    color: #007ebe;
+    text-align: center;
+}
+
+/* ////////////////////////////////// Samples ////////////////////////////////// */
+
+.samples {
+  background-color: #f7f7f7f7;
+  position: relative;
+}
+.sampleContainer {
+  position: relative;
+}
+.individualSample {
+    display: inline-block;
+    width: 30%;
+    margin: 14px;
+    vertical-align: top;
+    background-color: white;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 1px 5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 1px 5px rgba(0,0,0,0.6);
+    -o-box-shadow: 0px 1px 5px rgba(0,0,0,0.6);
+    transition: .3s;
+    color: #667584;
+    
+}
+.individualSample:hover {
+  cursor: pointer;
+  transform: translate(10px, -10px);
+}
+.samplePicture img {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+.datePublication {
+    padding: 0 15px;
+}
+.datePublication p {
+    font-family: 'PT Serif', serif;
+    font-size: 11px;
+    margin: 15px 0;
+}
+.sampleDescription p {
+    font-size: 16px;
+    padding: 0 15px;
+    line-height: 30px;
+}
+.sampleDescription {
+    height: 115px;
+}
+.fontFix {
+  font-family: 'PT Serif', serif;
+}
+.sampleSortingButtons button {
+    font-size: 20px;
+    padding: 5px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: #667584;
+
+}
+.sampleSortingButtons button:hover {
+  cursor: pointer;
+  background-color: #007ebe;
+  transition: .3s;
+  color: #f7f7f7f7 !important;
+}
+.sampleSortingButtons button:hover span {
+  transition: .3s;
+  color: #f7f7f7f7 !important;
+}
+.sampleSortingButtons {
+    text-align: center;
+    padding: 65px 0 30px 0;
+}
+.activeButton {
+    background-color: #007ebe;
+    color: #f7f7f7f7 !important;
+}
